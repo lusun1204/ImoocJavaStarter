@@ -10,8 +10,11 @@ public class NonMotor {
     // 私有属性：品牌、颜色、轮子(默认2个)、座椅（默认 1个）
     private String brand;
     private String color;
-    private int wheelNum;
-    private int seatNum;
+    //private int wheelNum;
+    private int wheelNum=2;
+    //private int seatNum;
+    private int seatNum=1;
+
     // 无参构造方法
     NonMotor(){
 
@@ -28,7 +31,7 @@ public class NonMotor {
         this.color=color;
         this.wheelNum=wheelNum;
         this.seatNum=seatNum;
-
+        //System.out.println(this.work());
     }
 
 
