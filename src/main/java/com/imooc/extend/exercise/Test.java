@@ -16,6 +16,9 @@ public class Test {
         System.out.println(electricVehicle.work());
 
         System.out.println("三轮车类信息测试：");
+        Tricycle tricycle = new Tricycle();
+        tricycle.setWheelNum(3);
+        System.out.println(tricycle.work());
 
     }
 }
