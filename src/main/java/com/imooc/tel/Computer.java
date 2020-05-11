@@ -15,4 +15,5 @@ public class Computer {
     public void music(){
         System.out.println("电脑可以听音乐");
     }
+
 }
