@@ -5,5 +5,8 @@ package com.imooc.tel;
  */
 public interface IPhoto {
     //具有拍照能力
-    public void photo();
+    void photo();
+    default void surface(){
+        System.out.println("我是接口原始的default_surface方法");
+    };
 }
