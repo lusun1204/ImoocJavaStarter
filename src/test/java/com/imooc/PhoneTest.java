@@ -43,6 +43,12 @@ public class PhoneTest {
         Computer c3 = new Computer();
         c3.connection();
         c3.surface();
+        System.out.println("~~~~~~~~~~");
+        INet w1 = new SmartWatch();
+        w1.connection();
+        System.out.println("~~~~~~~~~~");
+        INet f4= new FourthPhone();
+        f4.connection();
 
 
     }

@@ -19,7 +19,14 @@ public  class Camera implements IPhoto ,INet{
     @Override
     public void surface(){
         System.out.println("重写deafult的surface方法");
-    };
+    }
+
+    @Override
+    public void connection() {
+
+    }
+
+    ;
 //    @Override
 //    public void connection ();
 //    public void photo(){
