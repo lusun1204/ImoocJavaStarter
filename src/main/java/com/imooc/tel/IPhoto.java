@@ -7,9 +7,11 @@ public interface IPhoto {
     //具有拍照能力
     void photo();
     default void surface(){
+
         System.out.println("我是接口原始的default_surface方法");
     };
     default void connection(){
+
         System.out.println("我是拍照接口默认的connection方法");
     }
 }
