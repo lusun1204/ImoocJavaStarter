@@ -1,13 +1,14 @@
 package com.imooc.polyTest;
 
-public class TestOne implements One,Two{
+public class TestOne {
 //    public int x=44;
     public void test(){
         System.out.println(One.x);
     }
 
     public static void main(String[] args) {
-        TestOne testOne = new TestOne();
-//        testOne.test();
+String str=null;
+str=String.format("hi,%s>>>>>>%s","打啊","阿斯达");
+        System.out.println(str);
     }
 }
