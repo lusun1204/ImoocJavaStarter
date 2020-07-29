@@ -1,4 +1,4 @@
-package com.imooc.set;
+package com.imooc.List;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -9,9 +9,9 @@ public class EmployeeTest {
         ArrayList arrayList = new ArrayList();
 
         //创建三个Employee类的对象
-        Employee employee1 = new Employee("张三", 500.0);
-        Employee employee2 = new Employee("李四", 600.0);
-        Employee employee3 = new Employee("王五", 700.0);
+        Employee employee1 = new Employee(1, "张三", 5000);
+        Employee employee2 = new Employee(2, "李四", 5500);
+        Employee employee3 = new Employee(3, "赵六", 4000);
 
         //添加员工信息到ArrayList中
         arrayList.add(employee1);
@@ -19,12 +19,10 @@ public class EmployeeTest {
         arrayList.add(employee3);
 
         //显示员工的姓名和薪资
-        System.out.println("姓名"+" "+"收入");
+        System.out.println("员工姓名 员工薪资");
         for (int i = 0; i < arrayList.size(); i++) {
-            System.out.print(((Employee)arrayList.get(i)).getName());
-            System.out.print(" ");
-            System.out.print(((Employee)arrayList.get(i)).getSalary());
-            System.out.println();
+            System.out.println(((Employee)arrayList.get(i)).getName() + "     " + ((Employee)arrayList.get(i)).getSalary());
+
         }
     }
 }
