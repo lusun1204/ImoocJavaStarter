@@ -5,7 +5,7 @@ public class Dog extends Animal{
         this.setName(name);
     }
     @Override
-    void paly(String name) {
+    void paly() {
         System.out.println(this.getName()+"在做游戏!");
     }
 }

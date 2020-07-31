@@ -20,5 +20,5 @@ public abstract class Animal {
         return status;
     }
 
-    abstract void paly(String name);
+    abstract void paly();
 }
