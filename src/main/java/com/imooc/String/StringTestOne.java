@@ -10,5 +10,6 @@ public class StringTestOne {
         String s="abcdefg";
         String s1=s.substring(2,5).toUpperCase().replaceAll("DE","MM");
         System.out.println(s1);
+        System.out.println(Integer.parseInt("1"));
     }
 }
