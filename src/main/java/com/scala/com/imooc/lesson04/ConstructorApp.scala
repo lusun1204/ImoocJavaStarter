@@ -7,6 +7,12 @@ object ConstructorApp {
 
     val person2 = new Person("FUR", 28, "Male")
     println(person2.name + ":" + person2.age + ":" + person2.school + ":" + person2.gender)
+
+    val student1 = new Student("toto", 18, "Female", "Math")
+    println(student1.name + ":" + student1.age + ":" + student1.school + ":" + student1.gender + ":" + student1.major)
+
+    println(student1)
+    println(student1.toString)
   }
 
 }
@@ -35,6 +41,22 @@ class Person(val name: String, val age: Int) {
     this.gender = gender
   }
 
-
   println("Person Constructor leave...")
+
+
 }
+
+//继承
+//继承即可以继承主构造器, 也可以继承附属构造器
+//extend后面的父类参数属性, 写不写都可以, 例如(name:String)也可以写(name)
+class Student(name: String, age: Int, gender: String, val major: String) extends Person(name: String, age: Int, gender: String) {
+  println("Person Student enter...")
+
+  //重写(在继承关系中, 子类可以对父类的属性或者方法进行重写)
+  override val school = "NCEPU"
+
+  override def toString: String = "Person: super.toString"
+
+  println("Person Student leave...")
+}
+
