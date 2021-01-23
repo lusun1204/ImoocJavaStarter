@@ -58,13 +58,14 @@ object functionApp {
   }
 
   /**
-   * 可变参数, 传递多个参数, 使用增强For循环实现
+   * 可变参数, 传递多个相同的参数, 使用增强For循环实现
+   * 传有限的数量的参数,可以枚举的传递,但数量多的话不现实
    *
    * @param numbers
    */
   def ManySum(numbers: Int*): Int = {
     var result = 0
-    for (number <- numbers) {
+    for (number <- numbers) { //类似Java增强For循环
       result += number
     }
     result
